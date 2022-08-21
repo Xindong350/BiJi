@@ -1,0 +1,226 @@
+.limit-one-line,
+.flink#article-container .flink-list > .flink-list-item a .flink-item-name,
+.flink#article-container .flink-list > .flink-list-item a .flink-item-desc,
+#aside_content .card-info .card-info-data > .card-info-data-item a .headline,
+#aside_content
+  .card-archives
+  ul.card-archive-list
+  > .card-archive-list-item
+  a
+  span,
+#aside_content
+  .card-categories
+  ul.card-category-list
+  > .card-category-list-item
+  a
+  span,
+#pagination .prev_info,
+#pagination .next_info,
+#sidebar #sidebar-menus .site-data .data-item .data-item-link > a > div,
+#sidebar #sidebar-menus .menus_items .site-page {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.limit-more-line,
+.article-sort-item-title,
+#recent-posts > .recent-post-item > .recent-post-info > .article-title,
+#recent-posts > .recent-post-item > .recent-post-info > .content,
+#error-wrap .error-content .error-info .error_subtitle,
+#aside_content .aside-list > .aside-list-item .content > .name,
+#aside_content .aside-list > .aside-list-item .content > .title,
+#aside_content .aside-list > .aside-list-item .content > .comment,
+#post-info .post-title,
+.relatedPosts > .relatedPosts-list .content .title,
+figure.gallery-group p,
+figure.gallery-group .gallery-group-name {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+}
+.fontawesomeIcon,
+hr:before,
+#article-container.post-content h1:before,
+#article-container.post-content h2:before,
+#article-container.post-content h3:before,
+#article-container.post-content h4:before,
+#article-container.post-content h5:before,
+#article-container.post-content h6:before,
+#post .post-outdate-notice:before,
+.note:not(.no-icon)::before {
+  display: inline-block;
+  font-weight: 600;
+  font-style: normal;
+  font-variant: normal;
+  font-family: "Font Awesome 5 Free";
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+#page .category-lists {
+  padding: 1rem 0 1.5rem;
+}
+@media screen and (max-width: 768px) {
+  #page .category-lists {
+    padding: 0;
+  }
+}
+#page .category-lists .category-title {
+  font-size: 2.57em;
+}
+@media screen and (max-width: 768px) {
+  #page .category-lists .category-title {
+    font-size: 2em;
+  }
+}
+#page .category-lists .category-list a {
+  color: var(--font-color);
+}
+#page .category-lists .category-list a:hover {
+  color: #2ba1d1;
+}
+#page .category-lists .category-list .category-list-count {
+  margin-left: 0.4rem;
+  color: #858585;
+}
+#page .category-lists .category-list .category-list-count:before {
+  content: "(";
+}
+#page .category-lists .category-list .category-list-count:after {
+  content: ")";
+}
+#page .category-lists ul {
+  margin-top: 0.4rem;
+  padding: 0 0 0 1rem;
+  list-style: none;
+  counter-reset: li;
+}
+#page .category-lists ul ul {
+  padding-left: 0.2rem;
+}
+#page .category-lists ul li {
+  position: relative;
+  margin: 0.3rem 0;
+  padding: 0.12em 0.4em 0.12em 1.4em;
+}
+#page .category-lists ul li:before {
+  position: absolute;
+  left: 0;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  top: 0.7em;
+  width: 0.43em;
+  height: 0.43em;
+  border: 0.215em solid #2ba1d1;
+  border-radius: 0.43em;
+  background: transparent;
+  content: "";
+}
+#page .category-lists ul li:hover:before {
+  border-color: #e91e64;
+}
+#page h1.page-title {
+  margin-top: 0.4rem;
+}
+.flink#article-container .flink-desc {
+  margin: 0.2rem 0 0.5rem;
+}
+.flink#article-container .flink-list {
+  overflow: auto;
+  padding: 10px 10px 0;
+  text-align: center;
+}
+.flink#article-container .flink-list > .flink-list-item {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 15px 7px;
+  width: calc(100% / 3 - 15px);
+  height: 90px;
+  border-radius: 8px;
+  line-height: 17px;
+  border: 1px dashed #2ba1d1;
+  -webkit-transform: translateZ(0);
+}
+@media screen and (max-width: 1024px) {
+  .flink#article-container .flink-list > .flink-list-item {
+    width: calc(50% - 15px) !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .flink#article-container .flink-list > .flink-list-item {
+    width: calc(100% - 15px) !important;
+  }
+}
+.flink#article-container .flink-list > .flink-list-item:hover img {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+.flink#article-container .flink-list > .flink-list-item:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: var(--text-bg-hover);
+  content: "";
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -moz-transition: -moz-transform 0.3s ease-out;
+  -o-transition: -o-transform 0.3s ease-out;
+  -ms-transition: -ms-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -o-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+.flink#article-container .flink-list > .flink-list-item:hover:before,
+.flink#article-container .flink-list > .flink-list-item:focus:before,
+.flink#article-container .flink-list > .flink-list-item:active:before {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+.flink#article-container .flink-list > .flink-list-item a {
+  color: var(--font-color);
+  text-decoration: none;
+}
+.flink#article-container .flink-list > .flink-list-item a img {
+  float: left;
+  margin: 15px 10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 35px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.flink#article-container .flink-list > .flink-list-item a .img-alt {
+  display: none;
+}
+.flink#article-container .flink-list > .flink-list-item a .flink-item-name {
+  display: block;
+  padding: 16px 10px 0 0;
+  height: 40px;
+  font-weight: bold;
+  font-size: 1.43em;
+}
+.flink#article-container .flink-list > .flink-list-item a .flink-item-desc {
+  display: block;
+  padding: 16px 10px 16px 0;
+  height: 50px;
+  font-size: 0.93em;
+}
