@@ -1,0 +1,47 @@
+/* 文字宽度 */
+@media screen and (max-width: 768px) {}
+
+#recent-posts>.recent-post-item>.recent-post-info {
+    float: right !important;
+    width: 198px !important;
+    margin-top: 36px !important;
+}
+
+/* 图片大小 */
+#recent-posts>.recent-post-item .post_cover img.post_bg {
+    width: 92% !important;
+    height: 92px !important;
+    margin-top: 15px !important;
+    margin-left: 10px !important;
+    border-radius: 10px !important;
+}
+
+/* 卡片高度 */
+#recent-posts>.recent-post-item .post_cover {
+    width: 150px !important;
+    height: 150px !important;
+    float: left !important;
+}
+
+#recent-posts>.recent-post-item .post_cover {
+    /* overflow: hidden; 删除*/
+    width: 44% !important;
+    height: 100% !important;
+}
+
+/* PC端文字 */
+#recent-posts>.recent-post-item>.recent-post-info>.article-title {
+    -webkit-line-clamp: 1 !important;
+    margin-top: -4px !important;
+    margin-left: -25px !important;
+    margin-bottom: 0.3rem !important;
+    color: var(--text-highlight-color) !important;
+    font-size: 1.2em !important;
+    line-height: 1.4 !important;
+}
+
+/* 小图标位置 */
+#recent-posts>.recent-post-item>.recent-post-info>.article-meta-wrap {
+    margin-bottom: 1rem !important;
+    margin-left: -25px !important;
+}
