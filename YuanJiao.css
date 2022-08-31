@@ -13,7 +13,7 @@ img[src*="#img-radius"] {
 /* 双栏卡片圆角 */
 #recent-posts > .recent-post-item {
   border-radius: 14px 14px 14px 14px;
-  border : 2px dashed pink;
+  border : 2px dashed #00000026;
 }
 /* github按钮圆角 */
 #card-info-btn {
