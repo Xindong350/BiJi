@@ -1,0 +1,99 @@
+#recent-posts {
+  margin-top: -1rem;
+  /*头部为空时抵消间隔，若有磁贴或日历请注释掉该行*/
+  align-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  /*规定灵活的项目在必要的时候拆行或拆列。*/
+  justify-content: space-between;
+  /*。*/
+}
+
+#recent-posts>.recent-post-item {
+  /*max-height:324px;*/
+  /*文章容器最大高度*/
+  margin-top: 1rem;
+  /*最小间距*/
+  display: inline-block;
+  height: auto;
+  /*高度自动*/
+  width: 49%;
+  /*文章容器容器宽度*/
+}
+
+#recent-posts>.recent-post-item .post_cover {
+  width: 150px;
+  height: 150px;
+  float: left;
+}
+
+#recent-posts>.recent-post-item .post_cover img.post_bg {
+  width: 92%;
+  height: 92px;
+  margin-top: 15px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+#recent-posts>.recent-post-item>.recent-post-info>.content {
+  display: none;
+  /*隐藏文章详情*/
+}
+
+#recent-posts>.recent-post-item {
+  -webkit-flex-direction: column;
+  /*容器内部纵向排列*/
+  -ms-flex-direction: column;
+  /*容器内部纵向排列*/
+  flex-direction: column;
+  /*容器内部纵向排列*/
+}
+
+#recent-posts>.recent-post-item .left_radius {
+  border-radius: 8px 8px 0 0;
+  /*圆角修改*/
+}
+
+#recent-posts>.recent-post-item .right_radius {
+  border-radius: 8px 8px 0 0;
+  /*圆角修改*/
+}
+
+.recent-post-item {
+  height: auto !important;
+  /*容器高度自动*/
+}
+
+.recent-post-info {
+  float: right;
+  width: 198px;
+  margin-top: 36px;
+}
+
+#recent-posts>.recent-post-item>.recent-post-info>.article-title {
+  -webkit-line-clamp: 1;
+  /*控制标题的行数*/
+  margin-top: -4px;
+  /*控制标题的上间距*/
+  margin-left: -25px;
+  margin-bottom: 0.3rem;
+  /*控制标题的下间距*/
+  color: var(--text-highlight-color);
+  font-size: 1.1em;
+  /*控制标题的字体大小*/
+  line-height: 1.4;
+  /*控制标题的行高*/
+  font-weight: 600;
+}
+
+#recent-posts>.recent-post-item>.recent-post-info>.article-meta-wrap {
+  margin-bottom: 1rem;
+  /*控制标题meta信息的底部间距*/
+  margin-left: -25px
+}
+
+@media screen and (max-width: 768px) {
+  #recent-posts>.recent-post-item {
+    width: 100%;
+    /*控制手机自适应*/
+  }
